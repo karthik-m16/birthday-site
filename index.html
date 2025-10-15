@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Birthday, My Love 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grad"></div>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Happy Birthday, Chiku/Amma ✨</h1>
+      <p class="subtitle">You are kind, brilliant, and stronger than you feel today. I’m with you—always.</p>
+      <button class="btn" id="celebrateBtn">Celebrate</button>
+    </div>
+    <div class="floating-hearts" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="affirmations">
+      <h2>Words for you</h2>
+      <div class="affirmation-card">
+        <p id="affirmationText">You light up every room you walk into.</p>
+        <div class="controls">
+          <button class="btn-outline" id="prevAffirmation">Prev</button>
+          <button class="btn" id="nextAffirmation">Next</button>
+        </div>
+      </div>
+      <blockquote class="soft-quote">“On the days you feel small, remember how loved you are.”</blockquote>
+    </section>
+
+    <section class="gallery">
+      <h2>Our favorite moments</h2>
+      <p class="hint">Tap a photo to see it full-screen.</p>
+      <div class="grid">
+        <!-- Replace with her photos -->
+        <img src="photos/photo1.jpg" alt="Her eyes" />
+        <img src="photos/photo2.jpg" alt="Cocky nails" />
+        <img src="photos/photo3.jpg" alt="Cutu smile" />
+        <img src="photos/photo4.jpg" alt="All-Nighter" />
+        <img src="photos/photo5.jpg" alt="Cutu bitchu" />
+        <img src="photos/photo6.jpg" alt="Traditional look" />
+        <img src="photos/photo7.jpg" alt="Radiant look" />
+        <img src="photos/photo8.jpg" alt="Celebration look" />
+        <img src="photos/photo9.jpg" alt="Silly selfie" />
+      </div>
+    </section>
+
+    <section class="timeline">
+      <h2>Little milestones</h2>
+      <div class="timeline-list">
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>First movie date</h3>
+            <p>I swear time slowed down the moment you laughed at my terrible joke.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>Your amazing win</h3>
+            <p>Watching you rise and own your talent at the game made me the proudest person in the room.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="dot"></div>
+          <div class="content">
+            <h3>That All-Nighter</h3>
+            <p>We spent the whole night together and forgot the world for a while. I keep that memory close.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="letter">
+      <h2>A letter from me</h2>
+      <div class="paper">
+        <p>
+          Hey love, today is yours. You don’t have to be “up” or “perfect.” You just have to be you—and that’s more than enough.
+          Thank you for your courage, your softness, and your fire. I believe in you, even on the quiet days.
+        </p>
+        <p>
+          Let’s take this one step at a time. Breathe. Eat something you enjoy. We’ll go slow and do it together.
+        </p>
+        <p class="signature">— Rasmalai</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with love • <span id="year"></span></p>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="close" id="closeLightbox" aria-label="Close">×</button>
+    <img id="lightboxImg" alt="Full view" />
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
